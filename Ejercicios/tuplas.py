@@ -49,4 +49,4 @@ def tuplas():
         
         
 
-tuplas()
+#tuplas()
