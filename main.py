@@ -1,6 +1,6 @@
 from Ejercicios import dicc
-from Ejercicios import sets
-from Ejercicios import tuplas
+from Ejercicios import sts
+from Ejercicios import tups
 
 import helpers
 from colorama import Fore
@@ -12,22 +12,25 @@ def diccs():
     mostrar_resultado("Diccinario:",dicc())
     
 def sets():
-    mostrar_resultado("Sets:",sets())
+    mostrar_resultado("Sets:",sts())
 
 def tuplas():
-    mostrar_resultado("Tuplas:",tuplas())
+    mostrar_resultado("Tuplas:",tups())
 
 def inicio():
+    finalizar= False
     helpers.clear() #Limpia la terminal
-    opcion = menu.menu()
-    if opcion==1:
-        tuplas()
 
-    elif opcion==2:
-        sets()
-    
-    elif opcion==3:
-        diccs()
+    while (not finalizar):
+        opcion = menu.menu()
+        if opcion==1:
+            tups()
+
+        elif opcion==2:
+            sets()
+
+        elif opcion==3:
+            diccs()
 
     print(Fore.GREEN  + "Nos vemos otro dia :)")
     print(Fore.WHITE)

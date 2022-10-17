@@ -1,4 +1,4 @@
-def tuplas():
+def tups():
     tup=("I",)
     print (tup)
     print(type(tup))
@@ -39,14 +39,12 @@ def tuplas():
             print(letra,True)
         else:
             print(letra,False)
-    
+    print()
     # cuantas veces aparece cada letra en tup3
     for letra in letras:
         print(letra,tup3.count(letra))
         
     
 
-        
-        
 
 #tuplas()
